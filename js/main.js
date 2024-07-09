@@ -50,8 +50,8 @@ function createCard (image, title, description, category ,price){
             <img src="${image}" class="rounded-md h-[280px] mx-auto" alt="">
         </div>
         <div class="card-info mt-2 flex flex-col space-y-2">
-            <h2 class="text-xl font-semibold">${title.slice(0,20)}</h2>
-            <p class="text-sm text-gray-500">${description.slice(0,50)}...</p>
+            <h2 class="text-xl font-semibold">${title.slice(0,20)}...</h2>
+            <p class="text-sm text-gray-500">${description.slice(0,80)}...</p>
             <h4 class="text-gray-400 font-semibold">${category}</h4>
             <span class="text-red-400 font-semibold">${price} EGP</span>
         </div>

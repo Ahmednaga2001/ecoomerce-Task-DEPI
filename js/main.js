@@ -26,6 +26,7 @@ const getData = () => {
             .then(json => {
                 arr.push(...json);
                 localStorage.setItem("products", JSON.stringify(arr));
+                createAllProducts();
             })
             .catch(error => console.error('Error fetching data:', error));
         }

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shooping Cart</title>
+
+  <!-- Font Awesome Library -->
+  <link rel="stylesheet" href="css/all.min.css" />
+
+  <!-- Tailwindcss library -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="tailwind.config.js"></script>
+
+  <!-- Custom CSS File -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Google Fonts Roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+    <!--
+  This example requires some changes to your config:
+  
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/forms'),
+    ],
+  }
+  ```
+-->
+<!--
+  This example requires updating your template:
+
+  ```
+  <html class="h-full bg-white">
+  <body class="h-full">
+  ```
+-->
+<div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
+    <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+      <img class="mx-auto h-10 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="Your Company">
+      <h2 class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">Sign in to your account</h2>
+    </div>
+  
+    <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+      <form class="space-y-4" action="#" method="POST">
+    
+        <div>
+          <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email address</label>
+          <div class="mt-2">
+            <input id="email" name="email" type="email" autocomplete="email" required class="email block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+          </div>
+        </div>
+  
+        <div>
+            <label for="password" class="block text-sm font-medium leading-6 text-gray-900">Password</label>
+         
+          <div class="mt-2">
+            <input id="password" name="password" type="password"  autocomplete="current-password"  class="password block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+          </div>
+        </div>
+        <div class=" mt-2">
+            <p class="error hidden font-semibold text-red-500 text-sm text-center">Invalid Email or Pasword</p>
+        </div>
+
+        <div>
+          <button type="submit" class="registerBtn flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Sign in</button>
+        </div>
+        <div class="text-sm mt-2">
+            <span class="text-gray-600">If You Do not Have an Account Go To </span><a href="/register.html" class="text-indigo-700 underline">Sign Up</a>
+          </div>
+      </form>
+  
+ 
+    </div>
+  </div>
+  
+
+
+  <script src="js/login.js"></script>
+</body>
+
+</html>
